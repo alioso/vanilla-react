@@ -10,3 +10,15 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+@keyframes greenPulse {
+	from { fill: #E9DCF7; -webkit-box-shadow: 0 0 9px #fff; }
+	50% { fill: #91bd09; -webkit-box-shadow: 0 0 18px #91bd09; }
+	to { fill: #E9DCF7; -webkit-box-shadow: 0 0 9px #fff; }
+  }
+
+.greenPulse {
+	animation-name: greenPulse;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}

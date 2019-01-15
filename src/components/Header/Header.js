@@ -13,14 +13,14 @@ export class Header extends Component {
 
 				<PrimaryNav navitems={this.props.navitems} />
 
-				<InlineForm
+				{/* <InlineForm
 					method="post"
 					action="#"
-					placeholder="Search the site"
+					placeholder="Find something"
 					cta="Search"
 					id="search-form"
 					label="Search the site"
-				/>
+				/> */}
 				{this.props.children}
 			</header>
 		);

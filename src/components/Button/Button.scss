@@ -7,9 +7,19 @@
  */
 .c-btn {
 	display: flex;
-	background: #333;
-	color: #fff;
 	border: 0;
+	background: #115059;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align: center;
+	padding: .5rem 1rem;
+	text-transform: uppercase
+}
+
+.c-btn:hover {
+	background: #3BA594;
+	color: #FFFFFF;
+	text-align: center;
 }
 
 /**

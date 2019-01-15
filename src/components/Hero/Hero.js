@@ -1,21 +1,22 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+
+import { ReactComponent as HeroImage } from "../../images/hero.svg";
+
 import "./Hero.scss";
+import { Button } from "../Button/Button";
 
 export class Hero extends Component {
 	render() {
 		return (
 			<div className="c-hero" {...this.props}>
-				<img
-					className="c-hero__img"
-					src={this.props.imgsrc}
-					alt={this.props.imgalt}
-				/>
+				<HeroImage className="c-hero__img" />
 				<div className="c-hero__body">
-					<h2 className="c-hero__title">{this.props.title}</h2>
-					<p className="c-hero__description">
+					<h1 className="c-hero__title">{this.props.title}</h1>
+					<h2 className="c-hero__description">
 						{this.props.description}
-					</p>
+					</h2>
+					<Button text="Sign Up" />
 				</div>
 			</div>
 		);
@@ -31,6 +32,6 @@ Hero.propTypes = {
 
 Hero.defaultProps = {
 	imgsrc: "../../images/fpo-1200x650.png",
-	title: "Hero Title",
-	description: "This is the hero description"
+	title: "Cloud Hosting for You.",
+	description: "High performance SSD Linux servers for all of your infrastructure needs."
 };

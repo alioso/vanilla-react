@@ -16,6 +16,7 @@ export class PrimaryNav extends Component {
 								<a
 									href={navitem.href}
 									onClick={navitem.onClick}
+									className="c-primary-nav__link"
 								>
 									{navitem.text}
 								</a>
@@ -39,15 +40,11 @@ PrimaryNav.defaultProps = {
 	navitems: [
 		{
 			href: "#",
-			text: "Nav Item"
+			text: "About"
 		},
 		{
 			href: "#",
-			text: "Nav Item"
+			text: "Contact"
 		},
-		{
-			href: "#",
-			text: "Nav Item"
-		}
 	]
 };

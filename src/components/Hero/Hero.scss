@@ -6,7 +6,7 @@
  * 1) A hero is a pronounced block typically situated at the top of a page layout 
  */
 .c-hero {
-	background: #eee;
+	background: #051D14;
 	position: relative;
 }
 
@@ -17,8 +17,10 @@
 	display: block;
 	width: 100%;
 	height: auto;
-	max-height: 80vh;
+	max-height: 50vh;
 	object-fit: cover;
+	max-width: 50vw;
+	float: right;
 }
 
 /**
@@ -27,7 +29,7 @@
  */
 .c-hero__body {
 	position: absolute;
-	bottom: 0;
+	top: 0;
 	left: 0;
 	padding: 3rem 2rem;
 	z-index: 1;
@@ -46,5 +48,12 @@
  */
 .c-hero__description {
 	font-size: 1.4rem;
-	margin: 0;
+	margin: 1.5rem 0 0 0;
+	max-width: 400px;
+}
+
+.c-hero__body .c-btn {
+	margin-top: 2.5rem;
+	background-color: #E9DCF7;
+	color: #333
 }

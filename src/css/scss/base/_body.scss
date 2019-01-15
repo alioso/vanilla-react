@@ -8,10 +8,13 @@
  *    This is used to achieve a sticky footer
  * 2) Prevent Mobile Safari from scaling up text: https://blog.55minutes.com/2012/04/iphone-text-resizing/
  */
+
+ @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+
 body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	font-family: sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	background: #fff;
 }

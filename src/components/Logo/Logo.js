@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import logoImg from "../../images/fpo-120x60.png";
-import globals from "../../data/globals.json";
+
+import { ReactComponent as LogoImg } from "../../images/linode-logo.svg";
+
 import "./Logo.scss";
 
 export class Logo extends Component {
@@ -13,11 +14,7 @@ export class Logo extends Component {
 				rel="home"
 				{...this.props}
 			>
-				<img
-					className="c-logo__img"
-					src={logoImg}
-					alt={globals.company.name}
-				/>
+					<LogoImg className="c-logo__img" />
 			</a>
 		);
 	}
